@@ -1,0 +1,14 @@
+Package: cljsTK
+Title: Expose a cljs tangle control in R.
+Version: 0.0.0.1
+Authors@R: as.person(c(
+    'Mike Pearson <gmp26@cam.ac.uk>',
+    'Hadley Wickham <h.wickham@gmail.com> [aut,cre]',
+    'Bret Victor [aut,cph]',
+    'RStudio [cph]'
+    ))
+Description: Exposes Bret Victor's "explorable explanations made easy" to R.
+Depends: R (>= 3.1.2)
+Imports: htmltools
+License: MIT + file LICENSE
+LazyData: true
