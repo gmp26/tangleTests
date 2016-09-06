@@ -8,7 +8,10 @@ Authors@R: as.person(c(
     'RStudio [cph]'
     ))
 Description: Exposes Bret Victor's "explorable explanations made easy" to R.
-Depends: R (>= 3.1.2)
-Imports: htmltools
+Depends:
+    R (>= 3.1.2)
+Imports:
+    htmltools
 License: MIT + file LICENSE
 LazyData: true
+RoxygenNote: 5.0.1

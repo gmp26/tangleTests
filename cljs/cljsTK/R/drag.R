@@ -2,8 +2,8 @@
 # <span data-var="cookies" class="" data-min="2" data-max="100"> cookies</span>
 
 tangle_deps <- function() {
-  htmltools::htmlDependency("tanglekit", "0.1.0",
-    src = system.file("www", package = "tanglekit"),
+  htmltools::htmlDependency("cljsTK", "0.0.0.1",
+    src = system.file("www", package = "cljsTK"),
     script = c("Tangle.js", "shiny.js", "TangleKit/mootools.js", "TangleKit/sprintf.js",
       "TangleKit/BVTouchable.js", "TangleKit/TangleKit.js"),
     stylesheet = "TangleKit/TangleKit.css"

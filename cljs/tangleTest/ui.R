@@ -7,6 +7,7 @@
 
 library(shiny)
 
+
 shinyUI(fluidPage(
 
   
@@ -38,7 +39,7 @@ shinyUI(fluidPage(
       h4("A tangle is an inline slider"),
       
       p("The histogram uses ",
-        tanglekit::tk_drag(30, " bins"),
+        cljsTK::tk_drag(30, " bins"),
         ". Try dragging that number to the right or left.")
       
     ),
