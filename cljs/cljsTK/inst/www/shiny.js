@@ -23,6 +23,7 @@ function debounce(func, wait, immediate) {
 var tangles = {};
 
 // cljsTK!
+console.log("Hello");
 
 var tangleBinding = new Shiny.InputBinding();
 $.extend(tangleBinding, {

@@ -6,7 +6,7 @@
 #
 
 library(shiny)
-
+library(rectanglewidget)
 
 shinyUI(fluidPage(
 
@@ -40,8 +40,9 @@ shinyUI(fluidPage(
       
       p("The histogram uses ",
         cljsTK::tk_drag(30, " bins"),
-        ". Try dragging that number to the right or left.")
+        ". Try dragging that number to the right or left."),
       
+      rectanglewidget::rectangleWidgetOutput("asquare")
     ),
     
     # Show a plot of the generated distribution
