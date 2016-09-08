@@ -42,7 +42,13 @@ shinyUI(fluidPage(
         cljsTK::tk_drag(30, " bins"),
         ". Try dragging that number to the right or left."),
       
-      rectanglewidget::rectangleWidgetOutput("square")
+      hr(),
+      
+      p("The rectangle is ",
+        cljsTK::tk_drag(200, " pixels", id = "wpx"), " wide and ",
+        cljsTK::tk_drag(100, " pixels", id = "hpx"), " tall.",
+        rectanglewidget::rectangleWidgetOutput("square")
+      )
     ),
     
     # Show a plot of the generated distribution

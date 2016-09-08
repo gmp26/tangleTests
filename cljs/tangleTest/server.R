@@ -33,7 +33,9 @@ shinyServer(function(input, output) {
   })
   
   output$square <- renderRectangleWidget({
-    rectanglewidget::rectangleWidget({})
+    rectanglewidget::rectangleWidget(fill = "#428BCA", 
+                                     w = paste0(input$wpx, "px"), 
+                                     h = paste0(input$hpx, "px"))
   })
 
 })
