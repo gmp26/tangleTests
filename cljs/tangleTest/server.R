@@ -32,6 +32,8 @@ shinyServer(function(input, output) {
     
   })
   
-  output$square <- renderRectangleWidget("square")
+  output$square <- renderRectangleWidget({
+    rectanglewidget::rectangleWidget({})
+  })
 
 })
